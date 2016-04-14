@@ -1,4 +1,5 @@
 body {
+	min-width: 625px;
 	background-color: #D0D6DC;
 	font-size: 100%;
 }
@@ -9,28 +10,20 @@ body {
 	position: relative;
 }
 
-#container {
-	min-height: 800px;
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: row;
-}
-
-#container > .btn-lg {
-	padding: 20px;
-	background: red;
-}
-
-
-/*body .btn-lg {
-	margin: 25% 5% 0 5%;
-	height: 150px;
-	width: 300px;
-	margin-left: 10%;
-	margin-right: 20%;
-	padding-right: 20px;
-	padding-left: 20px;
-	background-color: #8A9AA9;
+/*#container > .btn-lg {
+	width: 370px;
+	height: 200px;
+	margin: 8% 0% 0 10%;
 }*/
+
+#btn1 {
+	width: 370px;
+	height: 200px;
+	margin: 0;
+}
+
+#btn2 {
+	width: 370px;
+	height: 200px;
+	margin: 0;
+}
