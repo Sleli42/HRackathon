@@ -15,10 +15,17 @@
 			</div>
 		</nav>
 	</header>
-<section id="container">
-	<button id="btn1" type="button" class="btn btn-secondary btn-lg">Large button</button>
-	<button id="btn2" type="button" class="btn btn-secondary btn-lg">Large button</button>
-</section>
+
+	<div class="container">
+    <!-- Jssor Slider Begin -->
+    <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 980px; height: 380px; overflow: hidden;">
+        ...
+    </div>
+    <!-- Jssor Slider End -->
+	</div>
+
+
+
 	<footer>
 		<nav class="navbar navbar-default navbar-fixed-bottom">
 			<div class="container">
@@ -27,3 +34,15 @@
 		</nav>
 	</footer>
 </body>
+
+<script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        var options = {
+            ..
+        };
+            
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        ...
+    });
+</script>

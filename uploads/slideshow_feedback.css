@@ -1,0 +1,11 @@
+body {
+	min-width: 625px;
+	background-color: #D0D6DC;
+	font-size: 100%;
+}
+
+#navbar {
+	background-color: #8A9AA9;
+	height: 120px;
+	position: relative;
+}
