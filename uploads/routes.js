@@ -8,7 +8,11 @@ module.exports = function(app, passport) {
 		res.render('form.ejs');
 	});
 
-	app.get('/test', function(req, res) {
-		res.render('test.ejs');
+	app.get('/give', function(req, res) {
+		res.render('give.ejs');
+	});
+
+	app.get('/slide', function(req, res) {
+		res.render('slide.ejs');
 	});
 }
