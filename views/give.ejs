@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="give.css">
+		<title>Feed me</title>
+	</head>
+<body>
+	<% include header %>
+	<a id="back" href="/" class="fa fa-caret-left" aria-hidden="true"></a>
+	<div class="container">
+
+		<ul class="tabs">
+        <li>
+          <input type="radio" checked name="tabs" id="tab1">
+          <label for="tab1">feeling</label>
+          <div id="tab-content1" class="tab-content animated fadeIn">
+    		 	<div class="jumbotron">
+    		<div class="row">
+  			<div class="col-xs-6 col-md-3">
+   				 <a href="#" class="thumbnail">
+   					 <i id="thumb" class="em em-sunglasses"></i>
+   				 </a>
+ 			 </div>
+ 			 <div class="col-xs-6 col-md-3">
+   				 <a href="#" class="thumbnail">
+    			 	 <i id="thumb" class="em em-blush"></i>
+   				 </a>
+ 			 </div>
+ 			 <div class="col-xs-6 col-md-3">
+   				 <a href="#" class="thumbnail">
+    				  <i id="thumb" class="em em-confused"></i>
+   				 </a>
+ 			 </div>
+ 			 <div class="col-xs-6 col-md-3">
+   				 <a href="#" class="thumbnail">
+    			  	 <i id="thumb" class="em em-scream"></i>
+   				 </a>
+ 			 </div>
+		</div>
+		  						<br>
+		  	<div class="panel panel-default">
+  				 <div id="panel-head" class="panel-heading">How did you feel ?</div>
+  		 	</div>
+		  	<textarea id="comment" class="form-control" rows="10"></textarea>
+ 			  <span id="camera" class="glyphicon glyphicon-camera"></span>
+   			  <span id="camera" class="glyphicon glyphicon-"></span>
+		    <div id="button" class="form-group">
+   				<div class="col-sm-offset-2 col-sm-10">
+     				<button id="subm" type="submit" class="btn btn-default">Submit</button>
+  				</div>
+  		   	</div>
+		</div>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" id="tab2">
+          <label for="tab2">Observating</label>
+          <div id="tab-content2" class="tab-content animated fadeIn">
+            <div class="jumbotron">
+		  	<div class="panel panel-default">
+  				 <div id="panel-head" class="panel-heading">What did you observe ?</div>
+  		 	</div>
+  		 				<br>
+		  	<textarea id="comment" class="form-control" rows="10"></textarea>
+ 			  <span id="camera" class="glyphicon glyphicon-camera"></span>
+   			  <span id="camera" class="glyphicon glyphicon-"></span>
+		    <div id="button" class="form-group">
+   				<div class="col-sm-offset-2 col-sm-10">
+     				<button id="subm" type="submit" class="btn btn-default">Submit</button>
+  				</div>
+  		   	</div>
+          </div>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" id="tab3">
+          <label for="tab3">Development</label>
+          <div id="tab-content3" class="tab-content animated fadeIn">
+            <div class="jumbotron">
+		  						<br>
+		 		<div class="input-group">
+  			<input id="email" type="email" class="form-control" placeholder="Recipient's mail address.." aria-describedby="basic-addon2">
+				</div>
+		  						<br>
+		  	<div class="panel panel-default">
+  				 <div id="panel-head" class="panel-heading">Development Tips</div>
+  		 	</div>
+		  	<textarea id="comment" class="form-control" rows="10"></textarea>
+ 			  <span id="camera" class="glyphicon glyphicon-camera"></span>
+   			  <span id="camera" class="glyphicon glyphicon-"></span>
+		    <div id="button" class="form-group">
+   				<div class="col-sm-offset-2 col-sm-10">
+     				<button type="subm" class="btn btn-default">Submit</button>
+  				</div>
+  		   	</div>
+          </div>
+        </li>
+</ul>
+	</div>
+	<!-- <a id="back" href="/" class="fa fa-caret-left" aria-hidden="true"></a>
+	<br>
+		<div class="jumbotron">
+			<div class="form-group">
+   			 <label for="name" class="col-sm-2 control-label">Name</label>
+    			<div class="col-sm-10">
+     				 <input type="Name" class="form-control" id="input" placeholder="Name">
+   				</div>
+		 	 </div>
+		  						<br>
+		  	<div class="form-group">
+   				<label for="lastname" class="col-sm-2 control-label">Lastname</label>
+    				<div class="col-sm-10">
+     					 <input type="lastname" class="form-control" id="input" placeholder="Last Name">
+   					</div>
+		 	 </div>
+		  						<br>
+		 	 <div class="form-group">
+   				<label for="email" class="col-sm-2 control-label">E-mail</label>
+    				<div class="col-sm-10">
+     					 <input type="email" class="form-control" id="input" placeholder="email">
+   					</div>
+		 	 </div>
+		  						<br>
+		  	<div class="panel panel-default">
+  				 <div id="panel-head" class="panel-heading">Development Tips</div>
+  		 	</div>
+		  	<textarea id="comment" class="form-control" rows="10"></textarea>
+ 			  <span id="camera" class="glyphicon glyphicon-camera"></span>
+   			  <span id="camera" class="glyphicon glyphicon-"></span>
+		    <div id="button" class="form-group">
+   				<div class="col-sm-offset-2 col-sm-10">
+     				<button type="submit" class="btn btn-default">Submit</button>
+  				</div>
+  		   	</div>
+		</div> -->
+
+
+
+
+	<!-- </div> -->
+
+	<footer>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+
+			</div>
+		</nav>
+	</footer>
+</body>

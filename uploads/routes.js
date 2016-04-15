@@ -5,7 +5,7 @@ module.exports = function(app, passport) {
 	});
 
 	app.get('/give', function(req, res) {
-		res.render('form.ejs');
+		res.render('give.ejs');
 	});
 
 	app.get('/form2', function(req, res) {
@@ -18,5 +18,9 @@ module.exports = function(app, passport) {
 
 	app.get('/slide', function(req, res) {
 		res.render('slide.ejs');
+	});
+
+	app.get('/test', function(req, res) {
+		res.render('test.ejs');
 	});
 }
