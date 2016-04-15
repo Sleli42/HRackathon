@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="ask.css">
-		<title>Feed me</title>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ask.css">
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<title>Feed me</title>
+</head>
 <body>
 	<%include header %>
 	<div class="container">
-	<!-- <i id="back" class="fa fa-caret-left" aria-hidden="true"> -->
 		<a id="back" href="/" class="fa fa-caret-left" aria-hidden="true"></a>
-	<br>
+		<br>
 		<div class="jumbotron">
-			<div class="form-group">
-   			 <label for="name" class="col-sm-2 control-label">Name</label>
-    			<div class="col-sm-10">
-     				 <input type="Name" class="form-control" id="input" placeholder="Name">
+			<p class="title">Ask a feedback to: </p>
+   			<div id="input_search" class="col-lg-6">
+   				<div class="input-group">
+   					<input type="text" class="form-control input_key" placeholder="Search for employee...">
+   					<span class="input-group-btn">
+   						<button class="btn btn-default" type="button">Search!</button>
+   					</span>
    				</div>
-		  </div>
-		  <br>
-		  <div class="form-group">
-   			 <label for="lastname" class="col-sm-2 control-label">Firstname</label>
-    			<div class="col-sm-10">
-     				 <input type="lastname" class="form-control" id="input" placeholder="First Name">
+   			</div>
+   			<br>
+   			<p class="title">Or to external people: </p>
+   			<div class="form-group">
+   				<label id="label" for="email" class="col-sm-2 control-label">@ </label>
+   				<div class="col-sm-10">
+   					<input type="email" class="form-control input_key" id="input" placeholder="email">
    				</div>
-		  </div>
-		  <br>
-		  <div class="form-group">
-   			 <label for="email" class="col-sm-2 control-label">E-mail</label>
-    			<div class="col-sm-10">
-     				 <input type="email" class="form-control" id="input" placeholder="email">
+   			</div>
+   			<br>
+   			<div id="toreveal" style="display: none">
+   				<p class="title">Explain your feedback request: </p>
+   				<textarea id="comment" class="form-control" rows="9" placeholder="Dear Sarah,
+can you please give me a feedback on my contribution to the CoDi Team during the HRackathon?
+Thanks for your time,
+Lucas."></textarea>
+   				<span id="camera" class="glyphicon glyphicon-camera"></span>
+   				<span id="camera" class="glyphicon glyphicon-microphone"></span>
+   				<div id="button" class="form-group">
+   					<div class="col-sm-offset-2 col-sm-10">
+   						<button type="submit" class="btn btn-default">Submit</button>
+   					</div>
    				</div>
-		  </div>
-		  <br>
-		  <div id="input_search" class="col-lg-6">
-   		 <div class="input-group">
-      		<input type="text" class="form-control" placeholder="Search for employee...">
-      		<span class="input-group-btn">
-       			 <button class="btn btn-default" type="button">Search!</button>
-      		</span>
-    		</div><!-- /input-group -->
- 		 </div><!-- /.col-lg-6 -->
- 		 <br>
- 		 <div id="button_mep" class="btn-group">
-  <a class="btn btn-default" href="#">
-    <i class="fa fa-align-left" title="Align Left"></i>
-  </a>
-  <a class="btn btn-default" href="#">
-    <i class="fa fa-align-center" title="Align Center"></i>
-  </a>
-  <a class="btn btn-default" href="#">
-    <i class="fa fa-align-right" title="Align Right"></i>
-  </a>
-  <a class="btn btn-default" href="#">
-    <i class="fa fa-align-justify" title="Align Justify"></i>
-  </a>
-</div>
-  		
-		  <textarea id="comment" class="form-control" rows="12" placeholder="  Feedback must be constructive if:
-   •
-   •
-   •"></textarea>
-   <span id="camera" class="glyphicon glyphicon-camera"></span>
-   <span id="camera" class="glyphicon glyphicon-microphone"></span>
-   <div id="button" class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </div>
-		</div>
-	</div>
-	<!-- <i id="back" class="fa fa-caret-left" aria-hidden="true"></i> -->
+   			</div>
+   		</div>
+   	</div>
+   	<footer>
+   		<nav class="navbar navbar-default navbar-fixed-bottom">
+   			<div class="container">
 
-	<footer>
-		<nav class="navbar navbar-default navbar-fixed-bottom">
-			<div class="container">
+   			</div>
+   		</nav>
+   	</footer>
+   </body>
 
-			</div>
-		</nav>
-	</footer>
-</body>
+   <script type="text/javascript">
+   	$('.input_key').on('input', function() { 
+    $( "#toreveal" ).show();// get the current value of the input field.
+});
+   </script>

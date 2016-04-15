@@ -16,6 +16,14 @@ module.exports = function(app, passport) {
 		res.render('ask.ejs');
 	});
 
+	app.get('/box', function(req, res) {
+		res.render('box.ejs');
+	});
+
+	app.get('/request', function(req, res) {
+		res.render('request.ejs');
+	});
+
 	app.get('/slide', function(req, res) {
 		res.render('slide.ejs');
 	});

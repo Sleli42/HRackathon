@@ -3,7 +3,26 @@ header {
 	padding: 0px;
 }
 
+#title {
+	font-family: "Indie Flower";
+	/*text-transform: uppercase;*/
+	color:white;
+	font-size: 40px;
+	margin-left: 150px;
+}
+/*
+header p {
+	color: white;
+	font-size: 34px;
+}*/
+/*
+header li a {
+	font-size: 35px;
+	color: white;
+}*/
+
 body {
+	overflow-x: hidden;
 	padding: 0px;
 	min-width: 625px;
 	background-color: #D0D6DC;
@@ -16,13 +35,20 @@ body {
 	background-color: #8A9AA9;
 	height: 120px;
 	position: relative;
+	margin-top: 0px;
 	margin-bottom: 40px;
 }
 
+#logo {
+	height: 20px;
+	width: 50px;
+	background-image: url("logo.png");
+}
+
+
 #catch {
-	color: #e5e5e5;
-	font-family: Gill Sans, sans-serif;
-	font-size: 48px;
+	color: white;
+	font-size: 44px;
 	margin-top: 30px;
 	padding: 0px;
 	float: left;
@@ -32,7 +58,7 @@ body {
 #notifs {
 	background-color: white;
 	width: 300px;
-	height: 120px;
+	/*float: right;*/
 	float: right;
 }
 
@@ -57,7 +83,6 @@ body {
 	background-image: url("http://www.ip-mobile.be/assets/img/perso.png");
 	background-repeat:no-repeat;
 	background-position:center bottom;
-	text-decoration: none;
 }
 
 #btn1 :hover {
@@ -80,7 +105,6 @@ body {
 	background-image: url("https://image.freepik.com/vecteurs-libre/brunette-personnage-de-la-femme_23-2147502479.jpg");
 	background-repeat:no-repeat;
 	background-position:center bottom;
-	text-decoration: none;
 }
 
 #cloche {
@@ -96,7 +120,6 @@ body {
 }
 
 #br {
-	font-size: 21px;
 	background-size: 90%;
 	background-color: white;
 	background-image: url("http://media1.giphy.com/media/lDISRpvesPk08/giphy.gif");
@@ -242,4 +265,56 @@ td {
 th {
 	background-color: #8A9AA9;
 	color: white;
+}
+
+
+/*____________fme_______________________________________*/
+
+#grow {
+	color: #8A9AA9;
+	background-color: white;
+	height: 1050px;
+	width: 700px;
+	padding-top: 10px;
+	font-size: 34px;
+}
+
+#grow p {
+	margin-top: 45px;
+	font-size: 28px;
+}
+
+#iimg {
+	margin-top: 115px;
+	margin-right: 1000px;
+	margin-bottom: 0;
+}
+
+#ent {
+	margin-top: 20px;
+	width: 600px;
+	height: 50px;
+	color: white;
+	background-color: #8A9AA9;;
+}
+
+#rules {
+	text-align: left;
+	border-radius: 20px;
+	padding: 10px;
+	margin-top: 80px;
+	width: 600px;
+	height: 220px;
+	font-size: 18px;
+	color: white;
+	background-color: #8A9AA9;
+}
+
+#catch a{
+	color: white;
+	text-decoration: none;
+}
+
+#titi {
+	text-align: center;
 }
