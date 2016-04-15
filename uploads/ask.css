@@ -9,7 +9,6 @@ body {
 }
 
 #navbar {
-	background-color: #8A9AA9;
 	height: 120px;
 	position: relative;
 }
@@ -28,12 +27,13 @@ body {
 }
 
 #comment {
-	margin-top: -5%;
-	font-size: 12px;
+	margin-top: 5%;
+	font-size: 10px;
 	font-style: italic;
 }
 
 #button {
+	float: right;
 	margin-top: 15px;
 }
 
@@ -42,12 +42,14 @@ body {
 }
 
 #input_search {
-	float:right;
+	float: right;
+	margin-bottom: 50px;
 }
 
 #back {
 	color: #8A9AA9;
 	text-decoration: none;
+	/*background-color: #D0D6DC;*/
 	float: left;
 	padding-left: -25px;
 }

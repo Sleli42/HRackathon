@@ -4,12 +4,16 @@ module.exports = function(app, passport) {
 		res.render('index.ejs');
 	});
 
-	app.get('/form', function(req, res) {
+	app.get('/give', function(req, res) {
 		res.render('form.ejs');
 	});
 
-	app.get('/give', function(req, res) {
-		res.render('give.ejs');
+	app.get('/form2', function(req, res) {
+		res.render('form2.ejs');
+	});
+
+	app.get('/ask', function(req, res) {
+		res.render('ask.ejs');
 	});
 
 	app.get('/slide', function(req, res) {

@@ -20,8 +20,9 @@ body {
 }
 
 #catch {
-	color: white;
-	font-size: 44px;
+	color: #e5e5e5;
+	font-family: Gill Sans, sans-serif;
+	font-size: 48px;
 	margin-top: 30px;
 	padding: 0px;
 	float: left;
@@ -56,6 +57,7 @@ body {
 	background-image: url("http://www.ip-mobile.be/assets/img/perso.png");
 	background-repeat:no-repeat;
 	background-position:center bottom;
+	text-decoration: none;
 }
 
 #btn1 :hover {
@@ -78,6 +80,7 @@ body {
 	background-image: url("https://image.freepik.com/vecteurs-libre/brunette-personnage-de-la-femme_23-2147502479.jpg");
 	background-repeat:no-repeat;
 	background-position:center bottom;
+	text-decoration: none;
 }
 
 #cloche {

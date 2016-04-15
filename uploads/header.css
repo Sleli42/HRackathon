@@ -34,3 +34,40 @@ body {
 	height: 120px;
 	float: right;
 }
+
+#btn1 {
+	color: #8A9AA9;
+	font-size: 60px;
+	font-family: 'Brush Script MT', cursive;
+	text-align: top;
+	width: 370px;
+	height: 900px;
+	margin: 0;
+	padding-bottom: 600px;
+	background-color: white;
+	background-image: url("http://www.ip-mobile.be/assets/img/perso.png");
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+#btn1 :hover {
+	color: #FFD700;;
+}
+
+#btn2 :hover {
+	color: #FFD700;
+}
+
+#btn2 {
+	color: #8A9AA9;
+	font-size: 60px;
+	font-family: 'Brush Script MT', cursive;
+	width: 370px;
+	height: 900px;
+	margin: 0;
+	padding-bottom: 600px;
+	background-color: white;
+	background-image: url("https://image.freepik.com/vecteurs-libre/brunette-personnage-de-la-femme_23-2147502479.jpg");
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}

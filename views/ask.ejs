@@ -4,13 +4,14 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="form.css">
+		<link rel="stylesheet" type="text/css" href="ask.css">
 		<title>Feed me</title>
 	</head>
 <body>
 	<%include header %>
 	<div class="container">
-	<a id="back" href="/" class="fa fa-caret-left" aria-hidden="true"></a>
+	<!-- <i id="back" class="fa fa-caret-left" aria-hidden="true"> -->
+		<a id="back" href="/" class="fa fa-caret-left" aria-hidden="true"></a>
 	<br>
 		<div class="jumbotron">
 			<div class="form-group">
@@ -34,12 +35,36 @@
    				</div>
 		  </div>
 		  <br>
-		  <textarea id="comment" class="form-control" rows="10" placeholder="  Feedback must be constructive if:
+		  <div id="input_search" class="col-lg-6">
+   		 <div class="input-group">
+      		<input type="text" class="form-control" placeholder="Search for employee...">
+      		<span class="input-group-btn">
+       			 <button class="btn btn-default" type="button">Search!</button>
+      		</span>
+    		</div><!-- /input-group -->
+ 		 </div><!-- /.col-lg-6 -->
+ 		 <br>
+ 		 <div id="button_mep" class="btn-group">
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-left" title="Align Left"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-center" title="Align Center"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-right" title="Align Right"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-justify" title="Align Justify"></i>
+  </a>
+</div>
+  		
+		  <textarea id="comment" class="form-control" rows="12" placeholder="  Feedback must be constructive if:
    •
    •
    •"></textarea>
    <span id="camera" class="glyphicon glyphicon-camera"></span>
-   <span id="camera" class="glyphicon glyphicon-"></span>
+   <span id="camera" class="glyphicon glyphicon-microphone"></span>
    <div id="button" class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-default">Submit</button>
@@ -47,6 +72,7 @@
   </div>
 		</div>
 	</div>
+	<!-- <i id="back" class="fa fa-caret-left" aria-hidden="true"></i> -->
 
 	<footer>
 		<nav class="navbar navbar-default navbar-fixed-bottom">
