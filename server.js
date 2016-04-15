@@ -5,6 +5,8 @@ var app = express();
 
 app.use(express.static(__dirname + '/uploads'));
 app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/images'));
 
 require('./uploads/routes.js')(app);
 
