@@ -1,0 +1,26 @@
+.container {
+
+font-size: 10px;
+}
+
+textarea {
+	max-width: 80%%;
+	font-size: 10px;
+}
+
+footer {
+	background-color: grey;
+}
+
+h1 {
+	font-size: 10px;
+}
+h2 {
+	font-size: 10px;
+}
+
+.deve {
+	text-align: center;
+	max-width: 100%;
+	font-size: 15px;
+}
