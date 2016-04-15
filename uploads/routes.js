@@ -4,7 +4,11 @@ module.exports = function(app, passport) {
 		res.render('index.ejs');
 	});
 
-	app.get('/ask', function(req, res) {
-		res.render('slideshow_feedback.ejs');
+	app.get('/form', function(req, res) {
+		res.render('form.ejs');
+	});
+
+	app.get('/test', function(req, res) {
+		res.render('test.ejs');
 	});
 }
