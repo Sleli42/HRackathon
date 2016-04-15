@@ -1,0 +1,26 @@
+.jumbotron {
+	background-color: lightblue;
+	height: 500px;
+	margin: 170px 5% 0 5%;
+}
+.btnbtn-default
+{
+float: right;
+}
+
+textarea {
+
+	max-height: 200px;
+	max-width: 100%
+}
+
+footer {
+
+	background-color: grey;
+
+}
+
+.designed {
+
+	font-family: copperplate;
+}
